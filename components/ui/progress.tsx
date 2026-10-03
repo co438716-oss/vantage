@@ -12,10 +12,13 @@ function Progress({
   return (
     <ProgressPrimitive.Root
       value={value}
+      locale="en-US"
+      getAriaValueText={(_, currentValue) =>
+        currentValue == null ? "" : `${currentValue}%`
+      }
       data-slot="progress"
       className={cn("flex flex-wrap gap-3", className)}
       {...props}
-      aria-valuetext={value == null ? undefined : `${value}%`}
     >
       {children}
       <ProgressTrack>
