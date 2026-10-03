@@ -55,6 +55,7 @@ export const navItems = [
   'Embudo de conversión',
   'Valor del cliente y retención',
   'Navegación digital',
+  'Design Thinking',
   'Experiencia omnicanal',
   'Alertas de abandono',
   'Customer Journey Maps',
