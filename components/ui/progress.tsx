@@ -15,6 +15,7 @@ function Progress({
       data-slot="progress"
       className={cn("flex flex-wrap gap-3", className)}
       {...props}
+      aria-valuetext={value == null ? undefined : `${value}%`}
     >
       {children}
       <ProgressTrack>
